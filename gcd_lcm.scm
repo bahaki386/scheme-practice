@@ -7,6 +7,6 @@
 				m)
 			(else 
 				(gcd n (modulo m n))))))
-(define lcm 
+(define mylcm 
 	(lambda (m n) 
-		(/ (gcd m n) (* m n))))
+		(quotient (mygcd m n) (* m n))))
