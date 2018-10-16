@@ -9,4 +9,4 @@
 				(gcd n (modulo m n))))))
 (define mylcm 
 	(lambda (m n) 
-		(quotient (mygcd m n) (* m n))))
+		(quotient (* m n) (mygcd m n))))
