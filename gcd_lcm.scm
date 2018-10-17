@@ -1,9 +1,7 @@
 (define mygcd 
 	(lambda (m n) 
 		(cond 
-			((< m n) 
-				(mygcd n m)) 
-			((eqv? n 0) 
+		 	((eqv? n 0) 
 				m)
 			(else 
 				(mygcd n (modulo m n))))))
